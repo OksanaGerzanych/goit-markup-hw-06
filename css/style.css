@@ -560,6 +560,15 @@ p {
   height: 20px;
   fill: currentColor;
 }
+/* Підпишись на розсиллку */
+.label-footer {
+  
+  
+ 
+}
+.field-footer {
+ 
+}
 /**
 |============================ | Portfolio page |============================
 */
@@ -711,6 +720,7 @@ p {
   visibility: hidden;
 }
 .modal {
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -742,4 +752,59 @@ p {
   background-color: var(--main-bgr);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+/**
+  |============================
+  | Form
+  |============================
+*/
+.form-register-group {
+  display: block;
+  
+}
+.form-register-title {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc( 23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+}
+.form-register-label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;
+ 
+}
+.form-register-field {
+  display: block;
+  position: relative;
+}
+.input-form-register {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.form-register-icon {
+  position: absolute;
+  left: 10px;
+  top: 18px;
+}
+
+.form-register-btn {
+  padding: 10px 52px;
+}
+.textarea-form-register {
+  resize: none;
+  width: 100%;
+}
+.form-register-comment {
+  display: block;
+  margin-bottom: 20px;
 }
