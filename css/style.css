@@ -30,6 +30,7 @@
   --items: 3;
   --indent: 30px;
 }
+
 body {
   font-family: var(--main-font);
   color: var(--main-text-color);
@@ -185,8 +186,6 @@ p {
 /** 
 |============================ | Image  |============================
 */
-
-
 .image,
 .image-team,
 .img-portfolio {
@@ -197,7 +196,6 @@ p {
 /**
 |============================ | Main |============================
 */
-
 
 .list {
   list-style: none;
@@ -487,7 +485,6 @@ p {
 /**
   |============================| Footer |============================
 */
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -497,11 +494,9 @@ p {
   display: inline-block;
   margin-bottom: 20px;
 }
-
 .list-address .list-item:not(:last-child) {
   margin-bottom: 9px;
 }
-
 .link-address,
 .link {
   display: inline-block;
@@ -512,8 +507,8 @@ p {
   color: var(--white-text-color);
   text-decoration: none;
   font-style: normal;
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 .link {
   color: rgba(255, 255, 255, 0.6);
@@ -527,19 +522,21 @@ p {
   color: var(--white-text-color);
   margin-bottom: 20px;
 }
-
+/**
+|============================
+|         Social link
+|============================
+*/
 .container-footer {
  display: flex;
  align-items: baseline;
  gap: 70px;
-
 }
 .list-social-links-footer {
   display: flex;
   gap: 10px;
   justify-content: center;
 }
-
 .link-social-footer {
   display: flex;
   justify-content: center;
@@ -562,9 +559,11 @@ p {
   height: 20px;
   fill: currentColor;
 }
-/* Підпишись на розсиллку */
-
-
+/**
+|============================
+| Підпишись на розсиллку
+|============================
+*/
 .subscribe-footer{
   display: flex;
   gap: 12px;
@@ -679,7 +678,6 @@ p {
 }
 .img-portfolio {
   background: url(portfolio7.jpg);
- 
 }
 .link-portfolio {
   display: block;
@@ -692,11 +690,10 @@ p {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /**
-  |============================  
-  | Перехід на текст при ховері на фото 
-  |============================
+|=================================================
+| Перехід на текст при ховері на фото в Portfolio
+|=================================================
 */
-
 .thumb-overlay-portfolio {
   position: relative;
   overflow: hidden;
@@ -787,17 +784,17 @@ p {
 .modal-icon {
   fill: currentColor;
 }
-.modal-btn:hover {
+.modal-btn:hover,
+.modal-btn:focus {
  color: var(--logo-text-color);
 }
 /** 
-  |============================
-  | Form
-  |============================
+|============================
+|           Form
+|============================
 */
 .form-register-group {
   display: block;
-  
 }
 .form-register-title {
   display: block;
@@ -806,7 +803,7 @@ p {
   line-height: calc( 23 / 20);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-text-color);
   margin-bottom: 12px;
 }
 .form-register-label {
@@ -815,22 +812,22 @@ p {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--p-text-color);
   margin-bottom: 4px;
- 
 }
 .form-register-field {
   display: block;
   position: relative;
+  margin-bottom: 10px;
 }
 .input-form-register {
   width: 100%;
   height: 40px;
-  margin-bottom: 10px;
+ 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 11px 42px;
-  outline: none;
+  outline: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -841,26 +838,22 @@ p {
 .form-register-icon {
   position: absolute;
   left: 12px;
-  top: 55%;
-  transform: translateY(-55%);
+  top: 50%;
   fill: currentColor;
    
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .input-form-register:focus + .form-register-icon,
 .input-form-register:hover +.form-register-icon
  {
   color: var(--logo-text-color);
 }
-/* Buttom */
 
-.form-register-btn {
-  padding: 10px 52px;
-  margin-bottom: 40px;
-}
-/* Comment */
-
+/**
+|============================
+|        Textarea
+|============================
+*/
 .textarea-form-register {
   display: block;
   resize: none;
@@ -868,13 +861,13 @@ p {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
-  outline: none;
+  outline: transparent;
 
  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea-form-register:focus,
 .textarea-form-register:hover {
-  border-color: #2196f3;
+  border-color: var(--logo-text-color);
 }
 .textarea-form-register::placeholder {
   font-weight: 400;
@@ -882,14 +875,16 @@ p {
   line-height: calc( 14 / 12);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  
 }
 .form-register-comment {
   display: block;
   margin-bottom: 20px;
 }
-/* Checkbox */
-
+/**
+|============================
+|          Checkbox
+|============================
+*/
 .form-register-agreement {
   display: flex;
   justify-content: center;
@@ -899,30 +894,40 @@ p {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--p-text-color);
   margin-bottom: 30px;
+}
+/* .form-register-checkbox:focus + .checkbox-icon {
+  outline: 1px solid red;
+} */
 
+.checkbox-text {
+  user-select: none;
 }
 .link-checkbox {
   color: var(--logo-text-color);
 }
-
 .icon-checked {
 opacity: 0;
-
-
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-register-checkbox:checked + .checkbox-icon .icon-checked {
 opacity: 1;
- 
 }
+
 .icon-unchecked {
 opacity: 1;
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-register-checkbox:checked + .checkbox-icon .icon-unchecked {
   opacity: 0;
- 
+}
+/**
+|============================
+|          Buttom
+|============================
+*/
+.form-register-btn {
+  padding: 10px 52px;
+  border: none;
 }
